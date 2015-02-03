@@ -156,7 +156,7 @@
 
 
 \begin{abstract}
-Scale-free networks are frequently described as the zenith of inequality and sometimes even pointed as a natural cause to social and structural concentrations. Although coherent with theory and empirical data, there are at least three aspects of scale-free networks that are equanimous: the presence of the agents in different networks, while each agent has the same amount of resource (time) for engaging with others; catastrophic traces of the distributions, which makes current state of networks ephemeral and eases agents to take other roles; favoring of resource allocation to less connected sectors.
+Scale-free networks are frequently described as the zenith of inequality and sometimes even pointed as a natural cause to social and structural concentrations. Although coherent with theory and empirical data, there are at least three aspects of social scale-free networks that are equanimous: the presence of each agent in different networks, while each agent has the same amount of resource (time) for engaging with others; catastrophic traces of the scale-free distribution, which makes current state of networks ephemeral and eases each agents to take different roles; favoring of resource allocation to less connected sectors.
 \end{abstract}
 
 %{
@@ -178,30 +178,30 @@ Scale-free networks are frequently described as the zenith of inequality and som
 
 
 \section{Introduction}\label{sec:intro}
-The history of scale-free networks includes controversies and resulting disagreements. Price reported in 1965 that citations networks had a heavy-tailed distribution following a power law~\cite{price1}. He described a ``cumulative advantage'' that explains the power law~\cite{price2}. This same networks with power law distribution of connectivity is nowadays called ``scale-free'' and the same explanation for the distribution is called ``preferential attachment'', as the result of a rediscovery of the field by Barab\`asi and Albert in 1999~\cite{barabasi1}.
+The history of scale-free networks includes controversies and resulting disagreements. Price reported in 1965 that citations networks had a heavy-tailed distribution following a power law~\cite{price1}. He described a ``cumulative advantage'' that explains the power law~\cite{price2}. This same networks with power law distribution of connectivity is nowadays called ``scale-free'' and the same explanation for the distribution is called ``preferential attachment'', as the result of a rediscovery of the property by Barab\`asi and Albert in 1999~\cite{barabasi1}. This power-law observation, and the rediscovery of small world networks, is usually considered the birth of the complex networks field, in the turn of the millennium. For the last decade and a half, most of the articles in physics report complex networks advances, with contributions of brilliant minds, such as: Barab\'asi, Mark Newman, Ballob\'as, Mendes, Luciano da F. Costa, Lada Adamic, etc.
 
 Another interesting fact about the meaning of the field is related to the essence of these structures. Observed in specific fields, agents (be them human or not) exhibit a power law distribution of activity. If their interaction yield links, the power law distribution of connectivity is one of the byproducts of activity. Indeed, connectivity and activity present high correlation in such scenarios.
 
 \subsection{Related work}\label{sec:rel}
-The complex network literature revolves around the hub. 
-More accurately, it glamorizes the most connected nodes as ``both the strength and the weakness of scale-free networks'', and put them as the most important vertexes. This is naive for a number of reasons:
+The complex network literature stresses concentration and revolves around the hub. 
+More accurately, it glamorizes the most connected nodes as ``both the strength and the weakness of scale-free networks''~\cite{wikipedia}, and put them as the most important vertexes. This is naive for a number of reasons:
 \begin{itemize}
     \item Hubs are but a few vertexes, which are replaced constantly.
     \item Hubs present the most trivial behavior: they interact as much as possible, in every situation, with everyone. That is one of the core reasons why they are hubs.
-    \item Hubs tend to present corrupt behavior, as they undertake huge amounts of time and energy on the network and frequently depend on such activities for basic provision.
-    \item World input to the network is done by periphery and intermediary vertexes, as they do not launch all their energy on the network.
+    \item Hubs tend to present corrupt behavior, as they wage huge amounts of time and energy on the network and frequently depend on such activities for basic provision.
+    \item World input to the network is done by periphery and intermediary vertexes, as they do not wage all their energy on the network.
     \item Authorities are often intermediaries or less active hubs, specially in cases where they deliver quality, not quantity.
     \item Network structure is given by intermediary vertexes, as they are the only with non trivial behavior: peripheral vertexes interact only a few times; hubs interact everywhere possible.
 \end{itemize}
 
-Therefore, this document is countercurrent with respect to available literature: not only the focus here is to observe scale-free networks as equanimous, but also to dilute the hub boast. No academic writing was found to expose this simple and pertinent content.
+Therefore, this document is countercurrent with respect to available literature: not only the focus here is to observe scale-free networks equanimous aspects, but also to dilute the hub boast. No academic writing was found to expose this simple and pertinent content.
 
 \section{Canonical background}\label{sec:can}
 Networks with a power law distribution of connectivity (degree) are called scale-free. In other words, be $p(k)$ the probability that an arbitrary vertex has degree $k$, than, for a scale-free network, one can assume:
 \begin{equation}
 p(k) \sim k^{-\gamma}
 \end{equation}
-\noindent where $\gamma$ is constant and typically $\gamma \in [2,3]$ and $\gamma > 1$ always. This same distribution is called, under certain conditions, the Pareto distribution or the Zipf law.
+\noindent where $\gamma > 1$ is constant and typically $\gamma \in [2,3]$. This same distribution is called, under certain conditions, the Pareto distribution or the Zipf law.
 
 \subsection{Zipf law}
 \subsection{Pareto distribution}
