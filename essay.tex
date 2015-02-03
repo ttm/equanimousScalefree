@@ -1,0 +1,220 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Sectioned Essay
+% LaTeX Template
+% Version 1.0 (3/8/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original Author:
+% Nicolas Diaz (nsdiaz@uc.cl) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage{hyperref}
+\usepackage[portuguese,english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+
+\usepackage{color} % for the notes
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+\usepackage{tocloft}
+\usepackage{multirow}
+
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+\usepackage{etoolbox}
+\newcommand{\githubi}{Git\textsc{h}ub}
+\newcommand{\bdoh}{{\sc b}lack {\sc d}uck {\sc o}pen \textsc{hub}}
+\newcommand{\ohloh}{\textsc{o}hloh}
+\newcommand{\php}{\textsc{php}}
+\newcommand{\twitter}{\textsc{t}witter}
+\newcommand{\facebook}{\textsc{f}acebook}
+\newcommand{\msn}{\textsc{msn}}
+\newcommand{\gchat}{\textsc{g}oogle \textsc{c}hat}
+\newcommand{\bash}{\textsc{b}ash}
+\newcommand{\python}{\textsc{p}ython}
+\newcommand{\django}{\textsc{d}jango}
+\newcommand{\curl}{c\textsc{url}}
+\newcommand{\firefox}{\textsc{f}irefox}
+\newcommand{\floss}{\textsc{floss}}
+\newcommand{\openoffice}{\textsc{o}pen\textsc{o}ffice}
+\newcommand{\puredata}{\textsc{p}uredata}
+\newcommand{\schema}{\textsc{s}chema.org}
+\newcommand{\wiki}{\textsc{w}iki}
+\newcommand{\nosql}{\textsc{n}o\textsc{sql}}
+\newcommand{\etherpad}{\textsc{e}therpad}
+\newcommand{\irc}{\textsc{irc}}
+\newcommand{\irci}{\textsc{Irc}}
+\newcommand{\ocd}{\textsc{ocd}}
+\newcommand{\participa}{\textsc{p}articipa.br}
+\newcommand{\httpb}{\textsc{http}}
+\newcommand{\foaf}{\textsc{foaf}}
+\newcommand{\ops}{\textsc{ops}}
+\newcommand{\sioc}{\textsc{sioc}}
+\newcommand{\gndo}{\textsc{gndo}}
+\newcommand{\html}{\textsc{html}}
+\newcommand{\ggg}{\textsc{ggg}}
+\newcommand{\opa}{\textsc{opa}}
+\newcommand{\obs}{\textsc{obs}}
+\newcommand{\vbs}{\textsc{vbs}}
+\newcommand{\lod}{\textsc{lod}}
+\newcommand{\nlp}{\textsc{nlp}}
+\newcommand{\sectionb}{\textsc{s}ection}
+\newcommand{\cn}{\textsc{cn}}
+\newcommand{\aab}{\textsc{aa}}
+\newcommand{\dc}{\textsc{d}ublin {\sc c}ore}
+\newcommand{\json}{\textsc{json}}
+\newcommand{\flask}{\textsc{f}lask}
+\newcommand{\aai}{\textsc{Aa}}
+\newcommand{\ontologiaa}{\textsc{o}ntologi\textsc{aa}}
+\newcommand{\ontologiaai}{\textsc{O}ntologi\textsc{aa}}
+\newcommand{\owl}{{\sc owl}}
+\newcommand{\www}{{\sc www}}
+\newcommand{\rdfi}{{\sc Rdf}}
+\newcommand{\mongodb}{{\sc m}ongo{\sc db}}
+\newcommand{\mysql}{{\sc m}y{\sc sql}}
+\newcommand{\rdf}{{\sc rdf}}
+%\newcommand{\paaineli}{P{\sc aa}inel}
+\newcommand{\paaineli}{P{\bf \sc aa}inel}
+\newcommand{\paainel}{p{\sc aa}inel}
+\newcommand{\gsd}{\textsc{gsd}}
+\newcommand{\ui}{\textsc{ui}}
+%\newcommand{\lmb}{\url{lab\textsc{M}acambira.sf.net}}
+\newcommand{\lm}{lab\textsc{M}acambira.sf.net}
+\newcommand{\lmi}{Lab\textsc{M}acambira.sf.net}
+%\newcommand{\lm}{\url{labMacambira.sf.net}}
+
+
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\hypersetup{
+        colorlinks,
+            linkcolor={red!50!black},
+                citecolor={blue!50!black},
+                    urlcolor={blue!80!black}
+                }
+
+
+\pretocmd{\chapter}{\addtocontents{toc}{\protect\addvspace{5\p@}}}{}{}
+\pretocmd{\section}{\addtocontents{toc}{\protect\vspace{-4mm}}}{}{}
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{50pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\\@date % Date
+
+\vspace{40pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%   TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{Three equanimous aspects\\of scale-free networks}\\ % Title
+%a natural collective focus\\on the collective being} % Subtitle
+%a collective and natural focus\\ on self-transparency
+} % Subtitle
+
+\author{\textsc{Renato Fabbri} % Author
+\\{\textit{IFSC/USP, Participa.br/SG-PR, labMacambira.sf.net}}} % Institution
+
+\date{\today} % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+%----------------------------------------------------------------------------------------
+%   ABSTRACT AND KEYWORDS
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
+
+
+\begin{abstract}
+Scale-free networks are frequently described as the zenith of inequality and sometimes even pointed as a natural cause to social and structural concentrations. Although coherent with theory and empirical data, there are at least three aspects of scale-free networks that are equanimous: the presence of the agents in different networks, while each agent has the same amount of resource (time) for engaging with others; catastrophic traces of the distributions, which makes current state of networks ephemeral and eases agents to take other roles; favoring of resource allocation to less connected sectors.
+\end{abstract}
+
+%{
+%\selectlanguage{portuguese}
+%\begin{abstract}
+%
+%\end{abstract}
+%}
+
+\hspace*{3,6mm}\textit{Keywords:} complex networks, scale-free networks, statistical physics % Keywords
+
+%\vspace{30pt} % Some vertical space between the abstract and first section
+
+%----------------------------------------------------------------------------------------
+%   ESSAY BODY
+%----------------------------------------------------------------------------------------
+\newpage
+\tableofcontents
+
+
+\section{Introduction}\label{sec:intro}
+The history of scale-free networks includes controversies and resulting disagreements. Price reported in 1965 that citations networks had a heavy-tailed distribution following a power law~\cite{price1}. He described a ``cumulative advantage'' that explains the power law~\cite{price2}. This same networks with power law distribution of connectivity is nowadays called ``scale-free'' and the same explanation for the distribution is called ``preferential attachment'', as the result of a rediscovery of the field by Barab\`asi and Albert in 1999~\cite{barabasi1}.
+
+Another interesting fact about the meaning of the field is related to the essence of these structures. Observed in specific fields, agents (be them human or not) exhibit a power law distribution of activity. If their interaction yield links, the power law distribution of connectivity is one of the byproducts of activity. Indeed, connectivity and activity present high correlation in such scenarios.
+
+\subsection{Related work}\label{sec:rel}
+The complex network literature revolves around the hub. 
+More accurately, it glamorizes the most connected nodes as ``both the strength and the weakness of scale-free networks'', and put them as the most important vertexes. This is naive for a number of reasons:
+\begin{itemize}
+    \item Hubs are but a few vertexes, which are replaced constantly.
+    \item Hubs present the most trivial behavior: they interact as much as possible, in every situation, with everyone. That is one of the core reasons why they are hubs.
+    \item Hubs tend to present corrupt behavior, as they undertake huge amounts of time and energy on the network and frequently depend on such activities for basic provision.
+    \item World input to the network is done by periphery and intermediary vertexes, as they do not launch all their energy on the network.
+    \item Authorities are often intermediaries or less active hubs, specially in cases where they deliver quality, not quantity.
+    \item Network structure is given by intermediary vertexes, as they are the only with non trivial behavior: peripheral vertexes interact only a few times; hubs interact everywhere possible.
+\end{itemize}
+
+Therefore, this document is countercurrent with respect to available literature: not only the focus here is to observe scale-free networks as equanimous, but also to dilute the hub boast. No academic writing was found to expose this simple and pertinent content.
+
+\section{Canonical scale-free networks}\label{sec:can}
+Networks with a power law distribution of connectivity (degree) are called scale-free. In other words, be $p(k)$ the probability that an arbitrary vertex has degree $k$, than, for a scale-free network, one can assume:
+\begin{equation}
+p(k) \sim k^{-\gamma}
+\end{equation}
+\noindent where $\gamma$ is constant and typically $\gamma \in [2,3]$ and $\gamma > 1$ always. This same distribution is called, under certain conditions, the Pareto distribution or the Zipf law.
+
+
+\section{Three equanimous aspects}\label{sec:three}
+
+\section{Conclusions}\label{sec:con}
+\subsection{Further work}
+\subsection{Acknowledgments}
+
+%\bibliographystyle{unsrt}
+%\bibliographystyle{plain}
+\bibliographystyle{ieeetr}
+\bibliography{ensaio}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
