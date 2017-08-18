@@ -76,45 +76,48 @@
 Scale-free networks are frequently described as the zenith of inequality and sometimes even pin-pointed
 	as a natural cause of concentrations, including accumulation of resources in human society.
 Although coherent with theory and empirical data,
-	there are at least three aspects of social scale-free networks that are egalitarian.
+	there are at least three aspects of scale-free networks that are egalitarian.
 	Using the social network metaphor (which is easier to grasp):
-	1) the presence of each agent (vertex or component) in different networks,
-	while each agent has the same amount of resource (time) for engaging (establishing links or edges) with other individual agents,
+	1) the presence of each agent (vertex or component) in diverse networks,
+	while each agent has the same amount of resources (e.g. time) for engaging (establishing links or edges) with other individual agents,
 	ideas or objects;
-	2) the constant change in of the concentration of resources (links) of each agent;
+	2) the constant change in the concentration of resources (in this case, links) of each agent;
 	3) the uniform distribution of resources with respect to the amount of resources per agent (the more resources per agent, the fewer the agents).
 We also consider an antithesis: the formalism of institutionalized roles might impose both a less dynamic variation of participant roles,
 and a less extreme concentration of resources.
-The conclusions suggest the urge of research to verify the need to better weight the emphasis current literature
+The conclusions suggest the urge of research to better examine and model the importance of the vertices
+	that are not hubs (i.e. peripheral and intermediary) and
+	verify the need to better weight the emphasis current literature
 places in the association of inequality to the scale-free networks (and other phenomena in which power laws are found).
 \end{abstract}
 
-\keywords{\em{ complex networks, scale-free networks, statistical physics, equality, egalitarianism}}
+\keywords{\em{ complex networks, scale-free networks, statistical physics, egalitarianism, Erdös sectors}}
 
-\pagestyle{fancy}
+\pagestyle{fancy}                                   j
 
 \section{INTRODUCTION}
 The history of the concept of scale-free networks includes controversies and resulting disagreements.
-Price reported in 1965 that citations networks had a heavy-tailed distribution following a power law~\cite{price1}.
-He described a ``cumulative advantage'' that explains the power law~\cite{price2}.
+\cite{price1}
+reported that citations networks had a heavy-tailed distribution following a power law.
+He also described a ``cumulative advantage'' that explains the power law~\citep{price2}.
 This same networks with a power-law distribution of connectivity is nowadays called ``scale-free''
 and the same explanation for the distribution is called ``preferential attachment'',
-as the result of a rediscovery of the property by Barab\`asi and Albert in 1999~\cite{barabasi1}.
-This power-law observation, and the rediscovery of small world networks,
+as the result of a rediscovery of the property by~\cite{barabasi1}.
+This power-law rediscovery, and the rediscovery of small-world networks by~\cite{small},
 is usually considered the birth of the complex networks field,
 in the turn of the millennium.
-For the last decade and a half,
+In the last decade and a half,
 most of the articles in physics report advances in complex networks.
 
 Another interesting fact about the meaning of the field
 is related to the essence of these structures.
-Observed in specific fields,
-agents (be them human or not) exhibit a power law distribution of activity.
+Components (be them human agents or not), in diverse contexts, often
+exhibit a power-law distribution of activity.
 If their activity yields links,
-the power law distribution of connectivity is one of the byproducts of activity.
+the power-law distribution of connectivity is one of the byproducts of activity.
 Indeed, connectivity and activity present high correlation in many of such scenarios~\citep{fabbri1,fabbri2,fabbri3}.
 
-\subsection{Contextualization within related work}\label{sec:rel}
+\subsection{Contextualization and related work}\label{sec:rel}
 The complex network literature stresses concentration and often revolves around the hub. 
 More accurately, it glamorizes the most connected nodes as
 ``both the strength and the weakness of scale-free networks''~\citep{wikipedia,networks},
@@ -138,18 +141,20 @@ In social networks terms, often used for such discussions:
 	    especially in cases where they deliver quality, not quantity.
 		This can be noticed by the fact that authorities usually exploit their authority
 		in order to achieve their goals by means of the dedication of other agents.
-	\item Network structure is given by intermediary vertices~\cite{fabbri1},
+	\item Network structure is yield by intermediary vertices~\citep{fabbri2},
 	    as they are the only with non-trivial behavior:
 		peripheral vertexes interact only a few times; hubs interact everywhere possible.
 \end{itemize}
 
 Therefore, this document is countercurrent with respect to available literature:
 not only the focus here is to observe scale-free networks egalitarian aspects,
-but also to dilute the hub boast.
+but also to dilute the hubs boast.
 No academic writing was found by the authors to expose this simple and pertinent content.
 
 \section{CANONICAL BACKGROUND}\label{sec:can}
-Networks with a power-law distribution of connectivity (degree or strength)
+Networks with a power-law distribution of connectivity (degree or strength\footnote{Degree of a vertex
+is the number of links connected to it.
+Strength of a vertex is the sum of the weight of the links connected to it.})
 are called \emph{scale-free}.
 In other words, be $p(k)$ the probability that an arbitrary vertex has degree $k$,
 than, for a scale-free network, one can assume:
@@ -157,8 +162,7 @@ than, for a scale-free network, one can assume:
 p(k) \sim k^{-\gamma}
 \end{equation}
 \noindent where $\gamma > 1$ is constant and typically $\gamma \in [2,3]$.
-This same distribution is called, under certain conditions, the Pareto distribution, the Zipf's law,
-or the Steven's power law.
+This same distribution is called, under certain conditions, e.g. the Pareto distribution or the Zipf's law.
 In fact, they all report that nature is performing a distribution of resources in
 a way that can be modeled by power laws.
 The next sections exposes this content very briefly.
@@ -190,8 +194,8 @@ follows more closely the distributions found in real languages:
 \noindent where $s\approx 2.7$.
 
 There are many non-trivial considerations to be made
-about the Zipf's law but, overall, it holds universally
-in all languages, including extinct and untranslated~\citep{zipf}.
+about the Zipf's law but, overall, it seems to hold universally
+in all languages, including those that are extinct and untranslated~\citep{zipf}.
 
 \subsection{Pareto distribution}
 The Pareto distribution is defined in many ways throughout the literature.
@@ -205,7 +209,7 @@ having the probability density function:
 \end{equation}
 \noindent where $k_m$ is the minimum value for $k$ to yield $p(k)>0$.
 This distribution is used to describe many observable phenomena,
-including social, financial and geophysical.
+including in social, financial and geophysical theories.
 
 \subsection{Human perception: Steven's law}
 The relation between the magnitude of a physical stimulus and
@@ -223,7 +227,7 @@ Notice that this last law (Steven's) is not a probability law as in the other ca
 In fact, many other phenomena are modeled as power laws, especially natural phenomena,
 such as Newton's laws of gravitation and inertia. 
 This calls for a consideration of the expressive capabilities of power laws and
-for a honest inquiry of what is so special about these functions that
+for an honest inquiry of what is so special about these functions that
 can account for its ubiquity~\citep{fabbri3}.
 
 \subsection{Scale-free networks}
@@ -235,13 +239,13 @@ such as the 'small-world-ness', high clusterization and
 abundant motifs~\citep{networks}.
 Most interesting for this discussion, these networks are not isolated
 entities, are not static and the power-law distribution is directly related to
-an uniform distribution are will be exposed in the next section.
+an uniform distribution as will be exposed in the next section.
 
 \section{THREE EGALITARIAN ASPECTS}\label{sec:three}
 This is the most important section of this article.
 We strived to keep everything as simple as possible to allow
 both this document to be reasonable to a large audience
-and for the reader to promptly grasp the subject.
+and for the reader to promptly grasp the contents.
 The kernel of our subject is: given the ubiquity of power-laws,
 and that they arise from an uniform distribution,
 and that, in the context of social networks, these structures
@@ -253,7 +257,7 @@ but states, at the same time, paradoxically, that equality is also prevalent?
 We should examine each of the egalitarian aspects of scale-free networks:
 \begin{itemize}
 	\item according to the exposition in~\cite{fabbri3}, 
-		the power-law is entailed by an uniform distribution.
+		a power-law is entailed by a uniform distribution.
 		The same quantity $C$ of resources
 		is distributed uniformly across all concentrations of resources:
 		$\forall k : p_U(k)=C \Rightarrow p(k) = C.k^{-\gamma}$
@@ -268,7 +272,7 @@ We should examine each of the egalitarian aspects of scale-free networks:
 		Social networks are in constant change and, in fact, stable hubs were only observed
 		in very small networks~\citep{barabasi}.
 		Although the overall distribution is somewhat stable (or invariant) in the power-law outline,
-		the participants move constantly between the periphery to intermediary and hubs sectors~\cite{fabbri1,fabbri2,versinus}.
+		the participants move constantly between the periphery to intermediary and hubs sectors~\citep{fabbri1,fabbri2,versinus}.
 		Thus, the scale-free (social) networks are egalitarian in the sense that
 		the participants present only transient concentrations of resources.
 	\item The networks are not isolated!
@@ -292,7 +296,7 @@ and other sorts of transportation~\citep{networks}.
 Nevertheless, aging of hubs is a recognized phenomenon,
 i.e. the descent of the most connected hubs is observed
 and even expected~\citep{aging}.
-Also, disease is spread rapidly by means of the hubs 
+Also, diseases spread rapidly by means of the hubs 
 and there are many other important negative contributions
 of the hubs and important positive contributions of the
 other vertices, as exposed in Section~\ref{sec:rel}.
@@ -305,10 +309,10 @@ our society and thus leaks into the scientific tradition.
 A social scientist might add that there is a constant
 pressure performed by the more powerful and rich groups
 to legitimate themselves and the inequality as a natural tendency.
-Anyway, there is an evident consonance both between the
-constant ennoblement of the hubs and the stress on the association
-of scale-free networks and inequality
-and between our observation that these associations should be
+Anyway, there is an evident consonance between the
+constant ennoblement of the hubs, the stress on the association
+of scale-free networks and inequality,
+and our observation that these associations should be
 considered with parsimony.
 
 
@@ -316,23 +320,24 @@ considered with parsimony.
 The observations made in this brief article have direct consequences for
 the purposes of the mathematical and agent-based models of complex networks.
 How can our models reflect the diversity input by peripherals
-and the greater authority held by the intermediary sector of the less connected hubs?
+and the greater authority held by the intermediary sector or the less connected hubs?
 Considering our current scientific literature:
 should one build a survey of the
-excesses in recent books, article and software?
+excesses about inequality and exaltation of hubs in recent complex networks books, article and software?
 More fundamentally, are the issues reported in this article sound
 and relevant?
-Given that the complex networks field is recent and that it is driven
-by social constructs and conveniences, we should take a very lucid direction
+Given that the complex networks field is recent and that it is as driven
+by social constructs and conveniences as any knowledge field,
+we need to choose a very lucid path
 in 1) asking more questions than stating fresh conclusions as facts;
-2) establishing a deeper dialog with the traditions that has studied
+2) establishing a deeper dialog with the traditions that have studied
 these phenomena for centuries in advance, such as social scientists and philosophers.
 
 Further work should involve attempts to answer the questions and follow the recommendations above,
 further confirm or refute the arguments in this documents, and:
 \begin{itemize}
-	\item develop models to reflect the fundamental roles developed by nodes beyond hubs, but also
-		peripherals and intermediary.
+	\item develop models to reflect the fundamental roles performed by nodes beyond hubs (i.e.
+		peripherals and intermediary).
 	\item Deepen the model exposed in~\cite{fabbri3} and submit it to peer review processes in order
 		to understand the extent of its validity.
 	\item Study the dynamics of individual agents in social networks with respect to the concentration of links,
@@ -341,7 +346,7 @@ further confirm or refute the arguments in this documents, and:
 		contains a number of networks with shared participants.
 	\item Deepen the absorption of the literature and the partnership with academics which produce
 		knowledge within the complex networks field, both to better understand the convictions
-		and to deliver our concerns.
+		and to spread our concerns.
 \end{itemize}
 % Are there other egalitarian aspects which we are not taking into account?
 
@@ -391,6 +396,9 @@ Price, D. J. D. S. (1965). Networks of scientific papers. Science, 510-515.
 
 \bibitem[Price, 1976]{price2}
 Price, D. D. S. (1976). A general theory of bibliometric and other cumulative advantage processes. Journal of the Association for Information Science and Technology, 27(5), 292-306.
+
+\bibitem[Watts \& Strogatz, 1998]{small}
+Watts, D. J., \& Strogatz, S. H. (1998). Collective dynamics of'small-world'networks. nature, 393(6684), 440.
 
 \bibitem[Wikipedia, 2017]{paretoWikipedia}
 Pareto distribution. (2017, August 10). In Wikipedia, The Free Encyclopedia. Retrieved 11:11, August 18, 2017, from \url{https://en.wikipedia.org/w/index.php?title=Pareto_distribution&oldid=794810636}
