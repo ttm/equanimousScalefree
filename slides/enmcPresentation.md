@@ -5,9 +5,9 @@
 Egalitarian aspects of scale-free networks
 
 #authors:
-Renato Fabbri and Marília M. Pisani
+Renato Fabbri and Marilia M. Pisani
 renato.fabbri@gmail.com, marilia.m.pisani@gmail.com
-(ICMC/USP)
+(ICMC/USP, CCNH/UFABC)
 
 #ENMC2017
 (XX Encontro Nacional de Modelagem Computacional)
@@ -38,7 +38,19 @@ renato.fabbri@gmail.com, marilia.m.pisani@gmail.com
 * Historical outline:
   - Price, 1965, 1976, Milgram, 1967
   - Barabási & Albert, 1999, Watts & Strogatz, 1998
-  - Power-law, small-world
+  - Power-law/scale-free, small-world
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -59,6 +71,8 @@ renato.fabbri@gmail.com, marilia.m.pisani@gmail.com
   - Many other (Gravity..)
   - Scale-free networks
 
+* Currently associated to inequality
+
 
 
 
@@ -76,7 +90,9 @@ renato.fabbri@gmail.com, marilia.m.pisani@gmail.com
 
 *Three egalitarian aspects*
 
-* Power-law <=> uniform distributions
+
+* Power-law <=> uniform distributions:
+  ==> p(k) / (k^alpha) = C
 
 * Networks are not static
 
@@ -105,17 +121,17 @@ and along networks.
 
 *Hubs boast*
 
-* Literature properties on the hubs:
+* Literature report properties on the hubs:
   - Attack and control of networks
   - Transport and communications
   - Aging of hubs
 
 * Considerations:
   - Hubs are few
-  - with trivial behavior
-  - Corruption, commitment
-  - Peripherals and intermediary give external input
-  - Intermediary give structure and are authorities
+  - with trivial behavior;
+  - Corruption, commitment;
+  - Peripherals and intermediary give external input,
+  - intermediary give structure and are authorities
 
 
 
@@ -171,11 +187,11 @@ and concentration as a natural tendency
 
 * Survey / text mining
 
-* Evaluation and development of the repported issues
+* Evaluation and development of the reported issues
   - Are the ideas sound and relevant?
-  - What is missing or can be improoved?
+  - What is missing or can be improved?
 
-* Study the dinamics of the vertices
+* Study the dynamics of the vertices
   - connectivity, scales, translation
 
 * Study the connectivity of participants within
